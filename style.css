@@ -1,0 +1,152 @@
+/* Body decoration */
+
+body {
+  text-align: center;
+  background-color: black;
+  font-family: "Courier New";
+  overflow-x: hidden;
+  padding-right: 20px;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  text-align: center;
+  
+}
+
+.hide{
+  color: black;
+}
+
+h1, h2, h3, p, li{
+  text-align: center;
+  color: white;
+}
+
+ol {
+  padding-left: 10em;
+}
+
+/* Link decoration */
+
+.bigButton {
+  color: black;
+  background: gray;
+  border: 2px solid black;
+  padding: 4px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  width: 80%;
+  animation: unselect 0.5s ease-in forwards;
+}
+
+.smallButton {
+  margin-top: 25px;
+  margin-right: 1em;
+  height: 100%;
+  width: 15vw;
+  color: black;
+  background: gray;
+  padding: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.smallButton:hover {
+  background: black;
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+}
+
+.bigButton:link {
+  text-decoration: none;
+}
+
+.bigButton:hover {
+  animation: select 1s ease-in-out forwards;
+}
+
+@keyframes select {
+  from {
+    color: black;
+    background: gray;
+    border: 2px solid black;
+    padding: 4px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 80%;
+  }
+  to {
+    background-color: black;
+    color: White;
+    border: 2px solid #00ff00;
+    width: 85%;
+  }
+}
+
+@keyframes unselect {
+  from {
+    background-color: black;
+    color: White;
+    border: 2px solid #00ff00;
+    width: 85%;
+  }
+  to {
+    color: black;
+    background: gray;
+    border: 2px solid black;
+    padding: 4px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+/* Search configuration */
+
+input {
+  background: #b0b0b0;
+  color: black;
+}
+
+/* header configuration */
+
+#policy {
+  margin-right: -22em;
+}
+#feed {
+  margin-right: -22em;
+}
+
+#head {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Screen size changing */
+
+@media (max-width: 600px) {
+  #head > #search {
+    display: none;
+  }
+  #policy {
+    float: right;
+  }
+  .bigButton {
+    height: 50px;
+  }
+
+@media (max-width: 1121px) {
+  #head > #policy {
+    margin-right: 0px;
+  }
+}
