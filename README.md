@@ -1,7 +1,6 @@
 Last updated: June 02, 2022
 
 # Project gaming
-###### Found on [this page in the website.](https://projectgaming.project-makers.repl.co/disclaimer.html)
 ### Author
 Project-Makers
 ### Copyright
